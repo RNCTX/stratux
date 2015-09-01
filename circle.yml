@@ -1,6 +1,0 @@
-dependencies:
-  override:
-    - make
-test:
-  override:
-    - make test
