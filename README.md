@@ -1,3 +1,5 @@
+# stratux rt2800/read-only/watchdog image
+
 Modification of the distribution disk image of the Stratux project at https://github.com/cyoung/stratux as follows...
 
 1) support for Buffalo AirStation N150 Wireless USB Adapter WLI-UC-GNM, Realtek wifi AP support disabled, hostapd updated with most recent source, WPA enabled, default passphrase is asdf1234, original hostapd/hostapd_cli executables are in the pi user's home folder
