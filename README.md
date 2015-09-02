@@ -8,7 +8,7 @@ Modification of the distribution disk image of the Stratux project at https://gi
 
 3) root's bashrc modified to show current filesystem mode (ro or rw) and easily switch between the two with aliases in the default bash profile ('ro' executed when logged in as root changes root filesystem to read only, 'rw' executed when logged in as root changes root filesystem to read/write, 'ro' flag is reset to default state when/if root user logs out of the system)
 
-4) default user 'pi' still intact with default password 'raspberry', same password set for sudo/root, sshd restricted to hosts outside of the wifi ip range being served (effectively making it ethernet-only, do not have your ethernet router also serving IPs from 192.168.10.0/24 if you care about ssh!), ifplugd modified to monitor ethernet port only
+4) default user 'pi' still intact with default password 'raspberry', sshd restricted to hosts outside of the wifi ip range being served (effectively making it ethernet-only, do not have your ethernet router also serving IPs from 192.168.10.0/24 if you care about ssh!), ifplugd modified to monitor ethernet port only
 
 5) watchdog installed, set to monitor dhcpd and hostapd PIDs, and a free memory threshold of 20MB, any failure of these will trigger a reboot
 
