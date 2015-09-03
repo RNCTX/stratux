@@ -187,15 +187,15 @@ end of file
 
 dphys-swapfile swapoff
 dphys-swapfile uninstall
-apt-get remove —-purge triggerhappy logrotate dphys-swapfile raspi-config
 update-rc.d bootlogs disable
-apt-get clean
 rm -f /etc/mtab
 ln -s /proc/self/mounts /etc/mtab
 update-rc.d apply_noobs_os_config disable
 update-rc.d regenerate_ssh_host_keys disable
 /etc/init.d/apply_noobs_os_config start
 /etc/init.d/regenerate_ssh_host_keys start
+apt-get remove —-purge triggerhappy logrotate dphys-swapfile raspi-config
+apt-get clean
 cp -al /etc /etc_org
 mv /var /var_org
 mkdir /etc_rw
