@@ -202,6 +202,9 @@ mkdir /etc_rw
 mkdir /var /var_rw
 ctrl - D
 sudo nano /mnt/etc/ld.so.preload … and uncomment all contents, save
+sudo rm -f /mnt/usr/bin/qemu-arm-static
+sudo rm -f /mnt/etc/resolv.conf
+sudo touch /mnt/etc_org/resolv.conf
 sudo piimg umount /mnt
 
 now the image is ready to boot, flash it to your SD card as described by the original author.  
