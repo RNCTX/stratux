@@ -203,7 +203,7 @@ mkdir /var /var_rw
 ctrl - D
 sudo nano /mnt/etc/ld.so.preload … and uncomment all contents, save
 sudo rm -f /mnt/usr/bin/qemu-arm-static
-sudo rm -f /mnt/etc/resolv.conf
+sudo rm -f /mnt/etc_org/resolv.conf
 sudo touch /mnt/etc_org/resolv.conf
 sudo piimg umount /mnt
 
