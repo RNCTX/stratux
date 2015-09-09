@@ -1,8 +1,8 @@
-# stratux rt2800/read-only/watchdog image
+# stratux read-only/watchdog image
 
 Modification of the distribution disk image of the Stratux project at https://github.com/cyoung/stratux as follows...
 
-1) support for Buffalo AirStation N150 Wireless USB Adapter WLI-UC-GNM, Realtek wifi AP support disabled, hostapd updated with most recent source, WPA enabled, default passphrase is asdf1234, original hostapd/hostapd_cli executables are in the pi user's home folder
+1) support for Buffalo AirStation N150 Wireless USB Adapter WLI-UC-GNM, original hostapd/hostapd_cli executables are in the pi user's home folder on the Buffalo images, the Realtek images are unchanged in regard to wifi.
 
 2) read-only filesystem implemented to help preserve the integrity and longevity of the root SD card, unionFS used to mount /etc/ and /var/, permanent folders exist at /etc_org/ and /var_org/, read/write folders mounted at /etc_rw/ and /var_rw/, swap file disabled/removed, triggerhappy disabled/removed, raspi-config disabled/removed, rsyslog disabled/removed and replaced with busybox for temporary RAM stored logs, fastboot enabled
 
