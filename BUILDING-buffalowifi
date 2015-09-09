@@ -9,7 +9,7 @@ prepare ubuntu working environment
 > cd piimg
 > make
 > sudo make install
-> piimg mount /home/(user)/Downloads/stratux1234567*.img /mnt
+> sudo piimg mount /home/(user)/Downloads/stratux1234567*.img /mnt
 > sudo cp /usr/bin/qemu-arm-static /mnt/usr/bin/
 > sudo cp /etc/resolv.conf /mnt/etc
 > sudo nano /mnt/etc/ld.so.preload and comment all contents, save
